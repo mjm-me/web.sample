@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ejemplo 2 de uso básico del html">
   <meta name="author" content="mjm">
-  <meta name="creation_date" content="19/11/2024">
+  <meta name="creation_date" content="2024/11/19">
   <meta name="updated_date" content="2024-11-19">
   <meta name="license" content="XXXX License">
   <meta name="keywords" content="aprendizaje, html, curso, principiantes">
@@ -26,7 +26,12 @@
       text-decoration: none;
     }
   </style>
+  <!-- 
   <script type="module" defer src="script.js"></script>
+  -->
+  <!-- 
+  <script type="module" defer src="exercise2.js"></script>
+-->
 </head>
 
 <body>
@@ -53,7 +58,7 @@ que es lóbrego mamífero y se peina...
 
   <p><abbr title="United Nations">UN</abbr> says last year that in December</p>
 
-  <p>El <time datetime="25/12/1875">día de Navidad el Rey Jorge luchó contra...</p>
+  <p>El <time datetime="1875-11-25">día de Navidad</time> el Rey Jorge luchó contra...</p>
   <p>El número <dat value="3,14">pi</dat> fue declarado en...</p>
 
 
@@ -69,13 +74,111 @@ que es lóbrego mamífero y se peina...
 
   <figure>
     <picture>
-      <source srcset="imagen.webp" type="image/webp" />
-      <source srcset="imagen.600.jpg" type="image/jpeg" media="(max-width: 799px)" />
-      <source srcset="imagen.800.jpg" type="image/jpeg" media="(min-width: 800px)" />
-      <img src="imagen.jpg" alt="Texto alternativo" />
+      <source srcset="./assets/imagen.webp" type="image/webp" />
+      <source srcset="./assets/imagen.600.jpg" type="image/jpeg" media="(max-width: 799px)" />
+      <source srcset="./assets/imagen.800.jpg" type="image/jpeg" media="(min-width: 800px)" />
+      <img src="./assets/imagen.jpg" alt="Texto alternativo" />
     </picture>
     <figcaption>Leyenda de la imagen</figcaption>
   </figure>
+
+  <section>
+    <h2>Elementos embebidos</h2>
+    <video src="assets/video01.mp4" controls width="400"></video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ulaLDptWOc" title="" frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">how to embed a youtube video</a> and <a
+        href="https://getaroundgamstop.com/">how to get around gamstop</a></iframe>
+  </section>
+
+  <section>
+    <h2>Tablas</h2>
+    <table>
+      <caption>Tabla de ejemplo</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>España</th>
+          <th>Francia</th>
+          <th>Portugal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Extensión</th>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+          <td>Dato 3</td>
+        </tr>
+        <tr>
+          <th>Población</th>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+          <td>Dato 3</td>
+        </tr>
+        <tr>
+          <th>Capital</th>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+          <td>Dato 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <th>Total</th>
+        <td>Dato final1</td>
+        <td>Dato final 2</td>
+        <td>Dato final 3</td>
+      </tfoot>
+    </table>
+  </section>
+
+  <section>
+    <h2>Formularios</h2>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label>Nombre
+          <input type="text" name="firstName" id="" placeholder="Dime tu nombre">
+        </label>
+
+        <label for="blabla">Apellidos</label>
+        <input type="text" name="surName" id="blabla" placeholder="Dime tu apellido">
+
+        <button type="submit">Enviar</button>
+      </fieldset>
+      <fieldset>
+        <legend>Datos comerciales</legend>
+        <label>
+          <input type="checkbox" name="isOk" required>
+          <span>Estoy de acuerdo con ...</span>
+        </label>
+        <!-- si tengo que elegir el turno del curso-->
+        <fieldset>
+          <legend>Turnos</legend>
+          <label>
+            <input type="radio" name="turn" value="M" id="">Mañana
+          </label>
+          <label>
+            <input type="radio" name="turn" value="T" id="T">Tarde
+          </label>
+          <label>
+            <input type="radio" name="turn" value="N" id="N">Noche
+          </label>
+        </fieldset>
+
+        <label>Curso
+          <select name="course">
+            <!--<option value="">Selecciona un curso</option>-->
+            <option value=""></option>
+            <option value="HC">HTML - CSS</option>
+            <option value="JS">JavaScript</option>
+        </label>
+        </select>
+
+
+      </fieldset>
+
+  </section>
 
 </body>
 
