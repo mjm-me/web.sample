@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio de recetas de sopas como ejercicio de un curso de HTML">
+  <meta name="keywords" content="sopas, cremas, zanahoria, arroz, jengibre, naranja, verdura, langostinos">
+  <meta name="author" content="Ricardo, Jesús, María Jesús">
+  <meta property="og:title" content="Web Sample Soup Recipes" />
+  <link rel="shortcut icon" href="../favicon-32x32.png" type="image/png">
+  <title>Recetas</title>
+</head>
+
+<body>
+  <!-- Header propuesto por Ricardo
+  <header>
+    <hgroup>
+      <h1>Receta</h1>
+      <p>Ejercicio del curso de HMTL</p>
+    </hgroup>
+    <nav>
+      <ul>
+        <li>
+          <h2 id="menu-superior">Sopas</h2>
+        </li>
+        <ol>
+          <li><a href="#receta-sopa-1">Sopa de zanahoria, jengibre y naranja</a></li>
+          <li><a href="#receta-sopa-2">Sopa de arroz</a></li>
+          <li><a href="#receta-sopa-3">Crema de zanahoria con langostinos</a></li>
+        </ol>
+        <li><a href="../pages/">pasta</a></li>
+        <li><a href="../pages/">verduras</a></li>
+        <li><a href="../pages/carnes.html">carnes</a></li>
+        <li><a href="../pages/pescados.html">pescados</a></li>
+        <li><a href="../pages/postres.html">postres</a></li>
+      </ul>
+    </nav>
+    <p><a href="../index.html">Home</a></p>
+  </header>
+  -->
+  <header>
+    <hgroup>
+      <h1>Receta</h1>
+      <p>Ejercicio del curso de HMTL</p>
+    </hgroup>
+    <nav id="menu-superior">
+      <ul>
+        <li><a href="./sopas.html">sopas</a></li>
+        <li><a href="./pasta.html">pasta</a></li>
+        <li><a href="./verduras.html">verduras</a></li>
+        <li><a href="./carnes.html">carnes</a></li>
+        <li><a href="./pescados.html">pescados</a></li>
+        <li><a href="./postres.html">postres</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <nav>
+      <h2>Sopas</h2>
+      <ul>
+        <li><a href="#receta-sopa-1">Sopa de zanahoria, jengibre y naranja</a></li>
+        <li><a href="#receta-sopa-2">Sopa de <strong>arroz</strong></a></li>
+        <li><a href="#receta-sopa-3">Crema de zanahoria con langostinos</a></li>
+      </ul>
+    </nav>
+    <article id="receta-sopa-1">
+      <h3>Sopa de zanahoria, jengibre y naranja</h3>
+      <figure>
+        <picture>
+          <source srcset="../assets/sopa-zanahoria-jengibre-y-naranja-320px.jpg" type="image/jpg" />
+          <source srcset="../assets/sopa-zanahoria-jengibre-y-naranja-480px.jpg" type="image/jpg"
+            media="(max-width: 799px)" />
+          <source srcset="../assets/sopa-zanahoria-jengibre-y-naranja-800px.jpg" type="image/jpg"
+            media="(min-width: 800px)" />
+          <img src="../assets/sopa-zanahoria-jengibre-y-naranja.jpg"
+            alt="foto de la sopa de zanahoria, jengibre y naranja" />
+        </picture>
+      </figure>
+
+      <section>
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>450 g de <strong>zanahorias</strong> troceadas</li>
+          <li>½ cebolla mediana en rodajas</li>
+          <li>1 trocito de jengibre fresco sin piel</li>
+          <li>2 cucharadas de mantequilla</li>
+          <li>4 tazas de caldo de verduras</li>
+          <li>1 cucharada de ralladura de naranja</li>
+          <li>3 naranjas medianas (peladas)</li>
+          <li>sal y pimienta al gusto</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Pasos</h4>
+        <ol>
+          <li>Saltear las zanahorias, las cebollas y el jengibre en margarina hasta que estén suaves.</li>
+          <li>Agregar 2 tazas de caldo. Cocinar a fuego lento hasta que estén tiernos.</li>
+          <li>Colocar las naranjas, la ralladura de naranja y la mezcla de verduras cocidas en el vaso de la batidora
+            y
+            batir durante 30-45 segundos hasta que la textura sea suave.</li>
+          <li>Ajustar la consistencia con las 2 tazas restantes de caldo.</li>
+          <li>Sazonar al gusto con sal y pimienta.</li>
+          <li>Se puede presentar con unas chips de verduras y cebollino picado.</li>
+          <li>Esta sopa se puede servir caliente o fría.</li>
+        </ol>
+      </section>
+      <footer>
+        <address>Publicada por MJM, <blockquote
+            cite="https://www.vitamixespana.com/recetas/sopas_cremas/sopa-zanahoria-jengibre-naranja/">
+            propiedad de Vitamix España
+          </blockquote>
+        </address>
+        <nav><a href="#menu-superior">
+            <p>Volver al inicio</p>
+          </a>
+      </footer>
+    </article>
+
+    <article id="receta-sopa-2">
+      <h3><strong>Sopa</strong> de <strong>arroz</strong></h3>
+      <figure>
+        <picture>
+          <source srcset="../assets/sopa-arroz-con-verduras-320px.jpg" type="image/jpg" />
+          <source srcset="../assets/sopa-arroz-con-verduras-480px.jpg" type="image/jpg" media="(max-width: 799px)" />
+          <source srcset="../assets/sopa-arroz-con-verduras-800px.jpg" type="image/jpg" media="(min-width: 800px)" />
+          <img src="../assets/sopa-arroz-con-verduras.jpg" alt="foto de la sopa de arroz con verduras" />
+        </picture>
+      </figure>
+
+      <section>
+        <h4>Ingredientes</h4>
+        <ul>
+          <li>Caldo Casero de Pollo y 8 Verduras 100% Natural 1 L</li>
+          <li>Cebolla 0,5</li>
+          <li>Arroz 1 taza</li>
+          <li>Patata grande 1 unidad</li>
+          <li>Calabaza 400 g</li>
+          <li>Perejil fresco</li>
+          <li>Sal</li>
+          <li>Pimienta de molinillo</li>
+          <li>Calabacín 1/2</li>
+          <li>Dientes de ajo 3</li>
+          <li>Aceite de Oliva Virgen Extra</li>
+        </ul>
+      </section>
+      <section>
+        <h4>Pasos</h4>
+        <ol>
+          <li>
+            Verduras frescas y de temporada; arroz, caldo y unos cuantos ingredientes más… Con estos sencillos y
+            riquísimos
+            ingredientes y con mucho amor y paciencia vas a conseguir una deliciosa sopa de arroz.
+          </li>
+          <li>
+            Para saber cuándo está hecho el arroz y en su punto para que te quede un plato de diez, es importante
+            conocer
+            este truco que te damos a continuación. El arroz cocido tiene un color homogéneo y el grano está entero.
+            Por
+            el
+            contrario, el arroz pasado tiene un aspecto más arrugado y a veces podrás distinguirlo porque queda
+            pastoso,
+            caldoso y se rompe cuando lo mueve, además de que parecerá estar partido por la mitad. Así que, te
+            recordamos
+            que a la hora de hacer esta sopa estés bastante atento a los tiempos de cocción. Para esta sopa de arroz
+            blanca
+            este truco no te hará falta; pero, para cuando hagas arroz para usarlo para otro plato como un arroz con
+            verduras o arroz a la cubana, por ejemplo, cabe decir que es importante que no dejes el arroz mucho tiempo
+            dentro del agua. Si no se hinchará más de lo normal y quedará pastoso.
+          </li>
+        </ol>
+      </section>
+      <footer>
+        <address>Publicada por Jesus, <blockquote cite="https://www.gallinablanca.es/receta/sopa-de-arroz-3877/">
+            propiedad de
+            Gallina Blanca</blockquote>
+        </address>
+      </footer>
+      <nav>
+        <a href="#menu-superior">
+          <p>Volver al inicio</p>
+        </a>
+      </nav>
+    </article>
+
+    <article id="receta-sopa-3">
+      <h3>Crema de zanahoria con langostinos</h3>
+      <figure>
+        <picture>
+          <source srcset="../assets/crema-zanahoria-y-langostinos-320px.jpg" type="image/jpg" />
+          <source srcset="../assets/crema-zanahoria-y-langostinos-480px.jpg" type="image/jpg"
+            media="(max-width: 799px)" />
+          <source srcset="../assets/crema-zanahoria-y-langostinos-800px.jpg" type="image/jpg"
+            media="(min-width: 800px)" />
+          <img src="../assets/crema-zanahoria-y-langostinos.jpg" alt="foto de la crema de zanahoria y langostinos" />
+        </picture>
+      </figure>
+
+      <section>
+        <h4>Ingredientes</h4>
+
+        <ul>
+          <li>8 langostinos</li>
+          <li>1 kg de zanahorias</li>
+          <li>1 blanco de puerro</li>
+          <li>1 penca de apio</li>
+          <li>1 mango</li>
+          <li>1 huevo cocido</li>
+          <li>80 g de taquitos de jamón</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4> Pasos</h4>
+        <ol>
+          <li>Pelar los langostinos y dorar brevemente los cuerpos en una cacerola con unas cucharadas de aceite.
+            Apartar y reservar. </li>
+          <li>En el mismo aceite, dorar muy bien las cabezas, apartar y reservar también.</li>
+          <li>Pelar las zanahorias, cortar en rodajas de tamaño medio y comenzar a sofreír, a fuego medio, en la
+            cacerola anterior</li>
+          <li>Agregar el blanco del puerro cortado en rodajas y la penca de apio limpia de hebras y troceada. Sofreír,
+            a
+            fuego medio, durante 5 minutos</li>
+          <li>Disponer las cabezas doradas de los langostinos en una jarra, verter 2 vasos de agua, sal y pimienta.
+          </li>
+          <li>Triturar bien con la batidora, colar y verter sobre las verduras que estamos rehogando. Dejar cocinar, a
+            fuego medio, hasta que la verdura esté muy tierna.</li>
+          <li>Para terminar la crema de zanahorias, apartar la cacerola del calor. Incorporar la pulpa del mango y
+            triturar bien hasta que quede muy cremosa; añadiendo un poco de agua si fuera necesario. Probar de sal
+          </li>
+          <li>Servir la crema con los cuerpos de los langostinos, el huevo cocido y los taquitos de jamón; todo picado
+            en daditos. Regar con un poco de virgen extra</li>
+        </ol>
+      </section>
+      <footer>
+        <address>Publicada por Rikardo Rodríguez, <blockquote
+            cite="https://blogs.canalsur.es/cometelocs/2024/10/03/crema-de-zanahorias-con-langostinos/">propiedad de
+            Sergio Fernandez, Cómetelo (AndalucíaTV)</blockquote>
+        </address>
+        <nav><a href="#menu-superior">
+            <p>Volver al inicio</p>
+          </a>
+        </nav>
+      </footer>
+
+    </article>
+  </main>
+
+  <footer>
+    <address>
+      CFD-SB
+    </address>
+  </footer>
+</body>
+
+</html>
